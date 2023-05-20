@@ -83,7 +83,7 @@ const CustomForm = () => {
                             placeholder="First Name"
                             className="min-w-full placeholder-varGray poppins-m text-[14px] p-4 border rounded-[4px] focus:border-varGray"
                         />
-                        {nameError && <p className="text-red-400 text-xs text-right italic">{nameError}</p>}
+                        {nameError && <p className=" pt-1 text-red-400 text-[10px] text-right italic">{nameError}</p>}
 
                     </div>
                     <div>
@@ -95,7 +95,7 @@ const CustomForm = () => {
                             placeholder="Last Name "
                             className="min-w-full placeholder-varGray poppins-m text-[14px] p-4 border rounded-[4px] focus:border-varGray"
                         />
-                        {lastNameError && <p className="text-red-400 text-xs text-right italic">{lastNameError}</p>}
+                        {lastNameError && <p className="pt-1 text-red-400 text-[10px] text-right italic">{lastNameError}</p>}
                     </div>
                     <div>
                         <input
@@ -106,7 +106,7 @@ const CustomForm = () => {
                             placeholder="Email Address"
                             className="min-w-full placeholder-varGray poppins-m text-[14px] p-4 border rounded-[4px] focus:border-varGray"
                         />
-                        {emailError && <p className="text-red-400 text-xs text-right italic">{emailError}</p>}
+                        {emailError && <p className="pt-1 text-red-400 text-[10px] text-right italic">{emailError}</p>}
                     </div>
                     <div>
                         <input
@@ -118,7 +118,7 @@ const CustomForm = () => {
                             className=" min-w-full placeholder-varGray poppins-m text-[14px] p-4 border rounded-[4px] focus:border-varGray"
                         />
 
-                        {passError && <p className="text-red-400 text-xs text-right italic">{passError}</p>}
+                        {passError && <p className="pt-1 text-red-400 text-[10px] text-right italic">{passError}</p>}
                     </div>
                     <button className="bg-varGreen text-varWhite uppercase p-4 poppins-m rounded-[4px] shadowM"> Claim your free trial </button>
                     <p className="text-[11px] text-gray-400 text-center leading-5 -m-1 px-5">By clicking the button, you are agreeing to our <span className="poppins-b text-varRed"> Terms and Services</span> </p>
