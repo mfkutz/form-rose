@@ -61,9 +61,7 @@
     }
 
     input[type]:focus {
-
         outline: 0 none;
-
     }
 }
 
