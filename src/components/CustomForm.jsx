@@ -91,6 +91,24 @@ const CustomForm = () => {
 
             <div className="lg:min-w-[530px]">
                 <button className="bg-varBlue mt-14 py-5 px-16 rounded-lg text-varWhite shadowM lg:min-w-[530px]"><span className="poppins-sb">Try it free 7 days</span> then $20/mo. thereafter</button>
+                
+                {isLoading ?
+                        <div className="flex justify-center text-center mt-6">
+                            <Oval height={40}
+                                width={40}
+                                color="#4fa94d"
+                                wrapperStyle={{}}
+                                wrapperClass=""
+                                visible={true}
+                                ariaLabel='oval-loading'
+                                secondaryColor="#4fa94d"
+                                strokeWidth={2}
+                                strokeWidthSecondary={2} />
+                        </div>
+                        :
+                        id.length !== 0 && <h4 className="text-[14px] text-white text-center mt-6 bg-red-600">ID Order: {id}</h4>
+                    }
+
                 <form onSubmit={generateOrder} className="flex flex-col bg-white mt-6 rounded-lg p-6 gap-4 shadowM lg:p-10 lg:gap-5">
                     <div>
                         <input
@@ -144,22 +162,7 @@ const CustomForm = () => {
                     </div>
                     <button disabled={inputDisabled} className={`bg-varGreen text-varWhite uppercase p-4 poppins-m rounded-[4px] shadowM ${formSubmited ? 'disabledButton ' : ''}`}> Claim your free trial </button>
                     <p className="text-[11px] text-gray-400 text-center leading-5 -m-1 px-5">By clicking the button, you are agreeing to our <span className="poppins-b text-varRed"> Terms and Services</span> </p>
-                    {isLoading ?
-                        <div className="flex justify-center text-center">
-                            <Oval height={40}
-                                width={40}
-                                color="#4fa94d"
-                                wrapperStyle={{}}
-                                wrapperClass=""
-                                visible={true}
-                                ariaLabel='oval-loading'
-                                secondaryColor="#4fa94d"
-                                strokeWidth={2}
-                                strokeWidthSecondary={2} />
-                        </div>
-                        :
-                        id.length !== 0 && <h4 className="text-[12px] text-red-600 text-center">ID Order: {id}</h4>
-                    }
+                    
                 </form>
             </div>
 
