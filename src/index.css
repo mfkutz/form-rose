@@ -68,3 +68,10 @@
 .shadowM {
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
+
+.disabledButton {
+    background-color: rgb(145, 141, 141);
+}
+.disabledInput {
+    background-color: rgb(226, 214, 214);
+}
